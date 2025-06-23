@@ -13,6 +13,7 @@ def activate_target_window():
         return False
 
     window = windows[0]
+    window.restore()
     window.activate()
     print(f"✅ 已激活窗口: {window.title}")
     time.sleep(0.5)
